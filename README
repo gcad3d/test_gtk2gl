@@ -1,0 +1,36 @@
+Testprogram for OpenGL-legacy with gtk2 for Linux, Microsoft-Msys2
+- connect all callbacks (mouse, keyboard)
+
+
+.........................................
+Using Linux:
+make -f test_gtk2gl.mak clean     clean after changing OS
+make -f test_gtk2gl.mak           make excutable test_gtk2gl    
+./test_gtk2gl                     start exe
+
+Prereqisites:
+libgtk2.0-dev
+libgtkgl2.0-dev
+
+
+.........................................
+Using Microsoft-Msys2:
+make -f test_gtk2gl.mak clean     clean after changing OS
+make -f test_gtk2gl.mak           make excutable test_gtk2gl.exe
+./test_gtk2gl.exe                 start exe
+
+Prereqisites:
+mingw-w64-ucrt-x86_64-gcc
+mingw-w64-ucrt-x86_64-make
+mingw-w64-x86_64-gtk2
+mingw-w64-x86_64-gtkglarea
+
+
+.........................................
+Files
+test_gtk2gl.mak          build test_gtk2gl[.exe]
+test_gtk2gl              executable Linux
+test_gtk2gl.exe          executable Msys2 or Microsoft-VC
+test_gtk2gl.c            main
+
+# eof
